@@ -175,540 +175,572 @@ class _MusicPageWidgetState extends State<MusicPageWidget>
                       child: TabBarView(
                         controller: _model.tabBarController,
                         children: [
-                          Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              ListView(
-                                padding: const EdgeInsets.symmetric(vertical: 10.0),
-                                shrinkWrap: true,
-                                scrollDirection: Axis.vertical,
-                                children: [
-                                  Container(
-                                    width: 100.0,
-                                    height: 190.0,
-                                    decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
-                                    ),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceEvenly,
-                                      children: [
-                                        wrapWithModel(
-                                          model: _model.musicCardModel1,
-                                          updateCallback: () =>
-                                              safeSetState(() {}),
-                                          child: MusicCardWidget(
-                                            musicCoverImage:
-                                                random_data.randomImageUrl(
-                                              0,
-                                              0,
-                                            ),
-                                            musicTitle: random_data.randomName(
-                                                true, false),
-                                            musicArtist: random_data.randomName(
-                                                true, false),
-                                          ),
-                                        ),
-                                        wrapWithModel(
-                                          model: _model.musicCardModel2,
-                                          updateCallback: () =>
-                                              safeSetState(() {}),
-                                          child: MusicCardWidget(
-                                            musicCoverImage:
-                                                random_data.randomImageUrl(
-                                              0,
-                                              0,
-                                            ),
-                                            musicTitle: random_data.randomName(
-                                                true, false),
-                                            musicArtist: random_data.randomName(
-                                                true, false),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  Container(
-                                    width: 100.0,
-                                    height: 190.0,
-                                    decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
-                                    ),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceEvenly,
-                                      children: [
-                                        wrapWithModel(
-                                          model: _model.musicCardModel3,
-                                          updateCallback: () =>
-                                              safeSetState(() {}),
-                                          child: MusicCardWidget(
-                                            musicCoverImage:
-                                                random_data.randomImageUrl(
-                                              0,
-                                              0,
-                                            ),
-                                            musicTitle: random_data.randomName(
-                                                true, false),
-                                            musicArtist: random_data.randomName(
-                                                true, false),
-                                          ),
-                                        ),
-                                        wrapWithModel(
-                                          model: _model.musicCardModel4,
-                                          updateCallback: () =>
-                                              safeSetState(() {}),
-                                          child: MusicCardWidget(
-                                            musicCoverImage:
-                                                random_data.randomImageUrl(
-                                              0,
-                                              0,
-                                            ),
-                                            musicTitle: random_data.randomName(
-                                                true, false),
-                                            musicArtist: random_data.randomName(
-                                                true, false),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  Container(
-                                    width: 100.0,
-                                    height: 190.0,
-                                    decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
-                                    ),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceEvenly,
-                                      children: [
-                                        wrapWithModel(
-                                          model: _model.musicCardModel5,
-                                          updateCallback: () =>
-                                              safeSetState(() {}),
-                                          child: MusicCardWidget(
-                                            musicCoverImage:
-                                                random_data.randomImageUrl(
-                                              0,
-                                              0,
-                                            ),
-                                            musicTitle: random_data.randomName(
-                                                true, false),
-                                            musicArtist: random_data.randomName(
-                                                true, false),
-                                          ),
-                                        ),
-                                        wrapWithModel(
-                                          model: _model.musicCardModel6,
-                                          updateCallback: () =>
-                                              safeSetState(() {}),
-                                          child: MusicCardWidget(
-                                            musicCoverImage:
-                                                random_data.randomImageUrl(
-                                              0,
-                                              0,
-                                            ),
-                                            musicTitle: random_data.randomName(
-                                                true, false),
-                                            musicArtist: random_data.randomName(
-                                                true, false),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  Container(
-                                    width: 100.0,
-                                    height: 190.0,
-                                    decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
-                                    ),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceEvenly,
-                                      children: [
-                                        wrapWithModel(
-                                          model: _model.musicCardModel7,
-                                          updateCallback: () =>
-                                              safeSetState(() {}),
-                                          child: MusicCardWidget(
-                                            musicCoverImage:
-                                                random_data.randomImageUrl(
-                                              0,
-                                              0,
-                                            ),
-                                            musicTitle: random_data.randomName(
-                                                true, false),
-                                            musicArtist: random_data.randomName(
-                                                true, false),
-                                          ),
-                                        ),
-                                        wrapWithModel(
-                                          model: _model.musicCardModel8,
-                                          updateCallback: () =>
-                                              safeSetState(() {}),
-                                          child: MusicCardWidget(
-                                            musicCoverImage:
-                                                random_data.randomImageUrl(
-                                              0,
-                                              0,
-                                            ),
-                                            musicTitle: random_data.randomName(
-                                                true, false),
-                                            musicArtist: random_data.randomName(
-                                                true, false),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  Container(
-                                    width: 100.0,
-                                    height: 190.0,
-                                    decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
-                                    ),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceEvenly,
-                                      children: [
-                                        wrapWithModel(
-                                          model: _model.musicCardModel9,
-                                          updateCallback: () =>
-                                              safeSetState(() {}),
-                                          child: MusicCardWidget(
-                                            musicCoverImage:
-                                                random_data.randomImageUrl(
-                                              0,
-                                              0,
-                                            ),
-                                            musicTitle: random_data.randomName(
-                                                true, false),
-                                            musicArtist: random_data.randomName(
-                                                true, false),
-                                          ),
-                                        ),
-                                        wrapWithModel(
-                                          model: _model.musicCardModel10,
-                                          updateCallback: () =>
-                                              safeSetState(() {}),
-                                          child: MusicCardWidget(
-                                            musicCoverImage:
-                                                random_data.randomImageUrl(
-                                              0,
-                                              0,
-                                            ),
-                                            musicTitle: random_data.randomName(
-                                                true, false),
-                                            musicArtist: random_data.randomName(
-                                                true, false),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ].divide(const SizedBox(height: 10.0)),
-                              ),
-                            ],
-                          ),
-                          Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    15.0, 0.0, 15.0, 0.0),
-                                child: ListView(
-                                  padding: EdgeInsets.zero,
+                          SingleChildScrollView(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                ListView(
+                                  padding: const EdgeInsets.symmetric(vertical: 10.0),
                                   shrinkWrap: true,
                                   scrollDirection: Axis.vertical,
                                   children: [
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel1,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
+                                    Container(
+                                      width: 100.0,
+                                      height: 190.0,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceEvenly,
+                                        children: [
+                                          wrapWithModel(
+                                            model: _model.musicCardModel1,
+                                            updateCallback: () =>
+                                                safeSetState(() {}),
+                                            child: MusicCardWidget(
+                                              musicCoverImage:
+                                                  random_data.randomImageUrl(
+                                                0,
+                                                0,
+                                              ),
+                                              musicTitle: random_data
+                                                  .randomName(true, false),
+                                              musicArtist: random_data
+                                                  .randomName(true, false),
+                                            ),
+                                          ),
+                                          wrapWithModel(
+                                            model: _model.musicCardModel2,
+                                            updateCallback: () =>
+                                                safeSetState(() {}),
+                                            child: MusicCardWidget(
+                                              musicCoverImage:
+                                                  random_data.randomImageUrl(
+                                                0,
+                                                0,
+                                              ),
+                                              musicTitle: random_data
+                                                  .randomName(true, false),
+                                              musicArtist: random_data
+                                                  .randomName(true, false),
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ),
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel2,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
+                                    Container(
+                                      width: 100.0,
+                                      height: 190.0,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceEvenly,
+                                        children: [
+                                          wrapWithModel(
+                                            model: _model.musicCardModel3,
+                                            updateCallback: () =>
+                                                safeSetState(() {}),
+                                            child: MusicCardWidget(
+                                              musicCoverImage:
+                                                  random_data.randomImageUrl(
+                                                0,
+                                                0,
+                                              ),
+                                              musicTitle: random_data
+                                                  .randomName(true, false),
+                                              musicArtist: random_data
+                                                  .randomName(true, false),
+                                            ),
+                                          ),
+                                          wrapWithModel(
+                                            model: _model.musicCardModel4,
+                                            updateCallback: () =>
+                                                safeSetState(() {}),
+                                            child: MusicCardWidget(
+                                              musicCoverImage:
+                                                  random_data.randomImageUrl(
+                                                0,
+                                                0,
+                                              ),
+                                              musicTitle: random_data
+                                                  .randomName(true, false),
+                                              musicArtist: random_data
+                                                  .randomName(true, false),
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ),
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel3,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
+                                    Container(
+                                      width: 100.0,
+                                      height: 190.0,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceEvenly,
+                                        children: [
+                                          wrapWithModel(
+                                            model: _model.musicCardModel5,
+                                            updateCallback: () =>
+                                                safeSetState(() {}),
+                                            child: MusicCardWidget(
+                                              musicCoverImage:
+                                                  random_data.randomImageUrl(
+                                                0,
+                                                0,
+                                              ),
+                                              musicTitle: random_data
+                                                  .randomName(true, false),
+                                              musicArtist: random_data
+                                                  .randomName(true, false),
+                                            ),
+                                          ),
+                                          wrapWithModel(
+                                            model: _model.musicCardModel6,
+                                            updateCallback: () =>
+                                                safeSetState(() {}),
+                                            child: MusicCardWidget(
+                                              musicCoverImage:
+                                                  random_data.randomImageUrl(
+                                                0,
+                                                0,
+                                              ),
+                                              musicTitle: random_data
+                                                  .randomName(true, false),
+                                              musicArtist: random_data
+                                                  .randomName(true, false),
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ),
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel4,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
+                                    Container(
+                                      width: 100.0,
+                                      height: 190.0,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceEvenly,
+                                        children: [
+                                          wrapWithModel(
+                                            model: _model.musicCardModel7,
+                                            updateCallback: () =>
+                                                safeSetState(() {}),
+                                            child: MusicCardWidget(
+                                              musicCoverImage:
+                                                  random_data.randomImageUrl(
+                                                0,
+                                                0,
+                                              ),
+                                              musicTitle: random_data
+                                                  .randomName(true, false),
+                                              musicArtist: random_data
+                                                  .randomName(true, false),
+                                            ),
+                                          ),
+                                          wrapWithModel(
+                                            model: _model.musicCardModel8,
+                                            updateCallback: () =>
+                                                safeSetState(() {}),
+                                            child: MusicCardWidget(
+                                              musicCoverImage:
+                                                  random_data.randomImageUrl(
+                                                0,
+                                                0,
+                                              ),
+                                              musicTitle: random_data
+                                                  .randomName(true, false),
+                                              musicArtist: random_data
+                                                  .randomName(true, false),
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ),
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel5,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
+                                    Container(
+                                      width: 100.0,
+                                      height: 190.0,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
                                       ),
-                                    ),
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel6,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
-                                      ),
-                                    ),
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel7,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
-                                      ),
-                                    ),
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel8,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
-                                      ),
-                                    ),
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel9,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
-                                      ),
-                                    ),
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel10,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
-                                      ),
-                                    ),
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel11,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceEvenly,
+                                        children: [
+                                          wrapWithModel(
+                                            model: _model.musicCardModel9,
+                                            updateCallback: () =>
+                                                safeSetState(() {}),
+                                            child: MusicCardWidget(
+                                              musicCoverImage:
+                                                  random_data.randomImageUrl(
+                                                0,
+                                                0,
+                                              ),
+                                              musicTitle: random_data
+                                                  .randomName(true, false),
+                                              musicArtist: random_data
+                                                  .randomName(true, false),
+                                            ),
+                                          ),
+                                          wrapWithModel(
+                                            model: _model.musicCardModel10,
+                                            updateCallback: () =>
+                                                safeSetState(() {}),
+                                            child: MusicCardWidget(
+                                              musicCoverImage:
+                                                  random_data.randomImageUrl(
+                                                0,
+                                                0,
+                                              ),
+                                              musicTitle: random_data
+                                                  .randomName(true, false),
+                                              musicArtist: random_data
+                                                  .randomName(true, false),
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ),
                                   ].divide(const SizedBox(height: 10.0)),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
-                          Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    15.0, 0.0, 15.0, 0.0),
-                                child: ListView(
-                                  padding: EdgeInsets.zero,
-                                  shrinkWrap: true,
-                                  scrollDirection: Axis.vertical,
-                                  children: [
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel12,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
-                                      ),
-                                    ),
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel13,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
-                                      ),
-                                    ),
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel14,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
-                                      ),
-                                    ),
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel15,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
-                                      ),
-                                    ),
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel16,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
-                                      ),
-                                    ),
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel17,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
-                                      ),
-                                    ),
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel18,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
-                                      ),
-                                    ),
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel19,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
-                                      ),
-                                    ),
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel20,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
-                                      ),
-                                    ),
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel21,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
-                                      ),
-                                    ),
-                                    wrapWithModel(
-                                      model: _model.musicListItemModel22,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: MusicListItemWidget(
-                                        artistName:
-                                            random_data.randomName(true, true),
-                                        songs:
-                                            random_data.randomName(true, true),
-                                      ),
-                                    ),
-                                  ].divide(const SizedBox(height: 10.0)),
-                                ),
-                              ),
-                            ],
-                          ),
-                          Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    15.0, 0.0, 15.0, 0.0),
-                                child: ListView(
-                                  padding: EdgeInsets.zero,
-                                  shrinkWrap: true,
-                                  scrollDirection: Axis.vertical,
-                                  children: [
-                                    wrapWithModel(
-                                      model: _model.playlistItemCardModel1,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: const PlaylistItemCardWidget(
-                                        artistName: 'Recently added',
-                                        leadingIcon: Icon(
-                                          Icons.playlist_add,
+                          SingleChildScrollView(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      15.0, 0.0, 15.0, 0.0),
+                                  child: ListView(
+                                    padding: EdgeInsets.zero,
+                                    shrinkWrap: true,
+                                    scrollDirection: Axis.vertical,
+                                    children: [
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel1,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
                                         ),
                                       ),
-                                    ),
-                                    wrapWithModel(
-                                      model: _model.playlistItemCardModel2,
-                                      updateCallback: () => safeSetState(() {}),
-                                      child: const PlaylistItemCardWidget(
-                                        artistName: 'Playlist',
-                                        leadingIcon: Icon(
-                                          Icons.playlist_play,
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel2,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
                                         ),
                                       ),
-                                    ),
-                                  ].divide(const SizedBox(height: 10.0)),
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel3,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
+                                        ),
+                                      ),
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel4,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
+                                        ),
+                                      ),
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel5,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
+                                        ),
+                                      ),
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel6,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
+                                        ),
+                                      ),
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel7,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
+                                        ),
+                                      ),
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel8,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
+                                        ),
+                                      ),
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel9,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
+                                        ),
+                                      ),
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel10,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
+                                        ),
+                                      ),
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel11,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
+                                        ),
+                                      ),
+                                    ].divide(const SizedBox(height: 10.0)),
+                                  ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
+                          ),
+                          SingleChildScrollView(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      15.0, 0.0, 15.0, 0.0),
+                                  child: ListView(
+                                    padding: EdgeInsets.zero,
+                                    shrinkWrap: true,
+                                    scrollDirection: Axis.vertical,
+                                    children: [
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel12,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
+                                        ),
+                                      ),
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel13,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
+                                        ),
+                                      ),
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel14,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
+                                        ),
+                                      ),
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel15,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
+                                        ),
+                                      ),
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel16,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
+                                        ),
+                                      ),
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel17,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
+                                        ),
+                                      ),
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel18,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
+                                        ),
+                                      ),
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel19,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
+                                        ),
+                                      ),
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel20,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
+                                        ),
+                                      ),
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel21,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
+                                        ),
+                                      ),
+                                      wrapWithModel(
+                                        model: _model.musicListItemModel22,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: MusicListItemWidget(
+                                          artistName: random_data.randomName(
+                                              true, true),
+                                          songs: random_data.randomName(
+                                              true, true),
+                                        ),
+                                      ),
+                                    ].divide(const SizedBox(height: 10.0)),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          SingleChildScrollView(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      15.0, 0.0, 15.0, 0.0),
+                                  child: ListView(
+                                    padding: EdgeInsets.zero,
+                                    shrinkWrap: true,
+                                    scrollDirection: Axis.vertical,
+                                    children: [
+                                      wrapWithModel(
+                                        model: _model.playlistItemCardModel1,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: const PlaylistItemCardWidget(
+                                          artistName: 'Recently added',
+                                          leadingIcon: Icon(
+                                            Icons.playlist_add,
+                                          ),
+                                        ),
+                                      ),
+                                      wrapWithModel(
+                                        model: _model.playlistItemCardModel2,
+                                        updateCallback: () =>
+                                            safeSetState(() {}),
+                                        child: const PlaylistItemCardWidget(
+                                          artistName: 'Playlist',
+                                          leadingIcon: Icon(
+                                            Icons.playlist_play,
+                                          ),
+                                        ),
+                                      ),
+                                    ].divide(const SizedBox(height: 10.0)),
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                           const Column(
                             mainAxisSize: MainAxisSize.max,

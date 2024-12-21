@@ -785,7 +785,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              'Lyrics translated in  more ...',
+                              'Lyrics translated in more ...',
                               style: FlutterFlowTheme.of(context)
                                   .titleLarge
                                   .override(
