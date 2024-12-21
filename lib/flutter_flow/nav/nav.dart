@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '/index.dart';
+import '/main.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 
 export 'package:go_router/go_router.dart';
@@ -32,17 +33,61 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
-      errorBuilder: (context, state) => const HomePageWidget(),
+      errorBuilder: (context, state) => const NavBarPage(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => const HomePageWidget(),
+          builder: (context, _) => const NavBarPage(),
         ),
         FFRoute(
           name: 'HomePage',
           path: '/homePage',
-          builder: (context, params) => const HomePageWidget(),
+          builder: (context, params) => params.isEmpty
+              ? const NavBarPage(initialPage: 'HomePage')
+              : const NavBarPage(
+                  initialPage: 'HomePage',
+                  page: HomePageWidget(),
+                ),
+        ),
+        FFRoute(
+          name: 'MusicPage',
+          path: '/musicPage',
+          builder: (context, params) => params.isEmpty
+              ? const NavBarPage(initialPage: 'MusicPage')
+              : const NavBarPage(
+                  initialPage: 'MusicPage',
+                  page: MusicPageWidget(),
+                ),
+        ),
+        FFRoute(
+          name: 'ContributePage',
+          path: '/contributePage',
+          builder: (context, params) => params.isEmpty
+              ? const NavBarPage(initialPage: 'ContributePage')
+              : const ContributePageWidget(),
+        ),
+        FFRoute(
+          name: 'IdentifyPage',
+          path: '/identifyPage',
+          builder: (context, params) => params.isEmpty
+              ? const NavBarPage(initialPage: 'IdentifyPage')
+              : const NavBarPage(
+                  initialPage: 'IdentifyPage',
+                  page: IdentifyPageWidget(),
+                ),
+        ),
+        FFRoute(
+          name: 'SearchPage',
+          path: '/searchPage',
+          builder: (context, params) => params.isEmpty
+              ? const NavBarPage(initialPage: 'SearchPage')
+              : const SearchPageWidget(),
+        ),
+        FFRoute(
+          name: 'SettingsPage',
+          path: '/settingsPage',
+          builder: (context, params) => const SettingsPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
