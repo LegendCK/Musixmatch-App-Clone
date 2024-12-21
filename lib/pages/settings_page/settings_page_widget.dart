@@ -364,12 +364,8 @@ class _SettingsPageWidgetState extends State<SettingsPageWidget> {
           Padding(
             padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
             child: FFButtonWidget(
-              onPressed: () async {
-                GoRouter.of(context).prepareAuthEvent();
-                await authManager.signOut();
-                GoRouter.of(context).clearRedirectLocation();
-
-                context.goNamedAuth('null', context.mounted);
+              onPressed: () {
+                print('Button pressed ...');
               },
               text: 'Log Out',
               options: FFButtonOptions(
